@@ -1,6 +1,18 @@
-h1 {
+body {
+    font-family: "Montserrat";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: "Montserrat";
     font-weight: bold;
+}
+
+h1 {
     font-size: 3.5rem;
     line-height: 1.5;
     font-weight: 900;
@@ -23,9 +35,10 @@ p {
     color: #8f8f8f;
 }
 
-body {
-    font-family: "Montserrat";
-}
+
+/*Headings*/
+
+.big-heading {}
 
 #title {
     color: white;
@@ -33,7 +46,7 @@ body {
 }
 
 .container-fluid {
-    padding: 3% 15%;
+    padding: 3% 15% 7%;
 }
 
 
@@ -71,6 +84,8 @@ body {
 .title-image {
     width: 60%;
     transform: rotate(25deg);
+    position: absolute;
+    right: 20%;
 }
 
 
@@ -78,6 +93,8 @@ body {
 
 #features {
     padding: 7% 15%;
+    background-color: white;
+    position: relative;
 }
 
 .feature-box {
@@ -134,4 +151,39 @@ body {
 
 .pricing-column {
     padding: 3% 2%;
+}
+
+@media (max-width: 1028px) {
+    #title {
+        text-align: center;
+    }
+    .title-image {
+        position: static;
+        transform: rotate(0);
+    }
+}
+
+
+/*Call to Action*/
+
+#cta {
+    background-color: #ff4c68;
+    padding: 60px;
+    text-align: center;
+}
+
+.cta-title {
+    color: white;
+}
+
+
+/*Footer*/
+
+#footer {
+    padding: 7% 15%;
+    text-align: center;
+}
+
+.icono {
+    margin: 20px 10px;
 }
